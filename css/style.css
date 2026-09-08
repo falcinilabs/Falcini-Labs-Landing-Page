@@ -1,10 +1,15 @@
-.root {
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
     /* Cores */
-    --detalhes: #FF6B00;
+    --detalhes: #db5b00;
     --detalhes_hover: #FF7A1A;
-    --textos: #E0E0E0;
+    --textos: #6b6b6c;
+    --textos_hover: white;
     --fundo: #2E2E2E;
     --fundo_detalhes: #262626;
+
+    --fonte_principal: "Space Grotesk", sans-serif;
 
 }
 
@@ -12,43 +17,96 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   /* outline: 1px dotted red;*/
+    font-family: var(--fonte_principal);
+    /*outline: 1px dotted red;*/
 }
-
 
 a {
     text-decoration: none;
-    color: #E0E0E0;
+    color: var(--textos_hover);
+    font-size: bold;
 }
 
 header {
     padding: 1rem 1.5rem;
     position: relative;
     box-shadow: 0px 3px 6px rgba(55, 58, 42, 0.2);
-
+    background-color: var(--fundo);
 }
 
 .menu_container {
-    border: 1px solid var(--fundo);
-    border-radius: 50px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
-    font-size: 30px;
-    font-weight: 600;
-    text-shadow: 3px 3px 3px rgba(30, 38, 45, 1);
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .logo img {
-    width: 75px;
+    /*background-color: white;
+    border-radius: 15px;*/
+    width: 65px;
     height: auto;
+    filter: drop-shadow(1px 0 0 #fff) 
+          drop-shadow(-1px 0 0 #fff) 
+          drop-shadow(0 1px 0 #fff) 
+          drop-shadow(0 -1px 0 #fff);
+}
+
+.logo_texto{
+    justify-content: center;
+    align-items: center;
+    line-height: 1.1pxs;
+    font-size: 1.4rem;
+    font-weight: bold;
+    word-break: break-all;
 }
 
 .logo_texto span {
-    color: #FF6B00;
+    color: var(--detalhes);
+    font-size: 1.4rem;
+}
+
+.logo_texto span .fa-slash {
+    display: inline-block;
+    transform: scaleX(-1);
+}
+
+.lista {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 38px;
+    transition: color 0.3s ease;
+}
+
+.lista a {
+    color: var(--textos);
+}
+
+.lista a:hover {
+    color: var(--textos_hover);
+}
+
+.botao {
+    display: inline-flex;
+    padding: 15px 30px;
+    background-color: var(--detalhes);
+    border-radius: 20px;
+    transition: background-color 0.3s ease,
+                box-shadow 0.3s ease,
+                transform 0.2s ease;
+}
+
+.botao:hover {
+    background-color: var(--detalhes_hover);
+    box-shadow: 0 0 15px var(--detalhes_hover);
+    transform: translateY(-2px);
 }

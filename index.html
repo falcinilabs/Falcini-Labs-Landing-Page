@@ -5,6 +5,7 @@
         <meta name="description" content="Criação de landing Pages">
         <meta name="viewport" content="width=device-width", initial-scale="1.0">
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/943f809271.js" crossorigin="anonymous"></script>
         <title>Falcini Labs</title>
     </head>
 
@@ -12,19 +13,28 @@
         <header>
             <div class="menu_container" id="menu">
                 <div class="logo">
-                    <span logo_imagem>
+                    <a href="#" class="logo_imagem">
                         <img src="images/FalciniLabs_logo.png" alt="Logo Falcini Labs"></img>
-                    </span>
+                    </a>
                     <a href="#" class="logo_texto">
-                            <span><</span>
-                            Falcini Labs
-                            <span>/></span>
-                        </div>
+                        <span>
+                            <i class="fa-solid fa-angle-left"></i>
+                        </span> 
+                        Falcini Labs 
+                        <span>
+                            <i class="fa-solid fa-slash"></i>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </span>
                     </a>
                 </div>
-                <nav class="menu">
-
-                </nav>
+                <nav class="menu_header" id="menu" aria-label="Menu Principal">
+                    <ul class="lista">
+                        <li><a href="#servicos" aria-label="Serviços">Serviços</a></li>
+                        <li><a href="#diferenciais" aria-label="Diferenciais">Diferenciais</a></li>
+                        <li><a href="#contato" aria-label="Contato">Contato</a></li>
+                    </ul>
+                </nav>                    
+                <a href="#contato" class="botao" aria-label="Pedir Orçamento">Orçamento</a>    
             </div>
         </header>
 
