@@ -28,7 +28,7 @@ a {
 }
 
 header {
-    padding: 1rem 1.5rem;
+    padding: 0.3rem 1.5rem;
     position: relative;
     box-shadow: 0px 3px 6px rgba(55, 58, 42, 0.2);
     background-color: var(--fundo);
@@ -50,9 +50,7 @@ header {
 }
 
 .logo img {
-    /*background-color: white;
-    border-radius: 15px;*/
-    width: 65px;
+    width: 50px;
     height: auto;
     filter: drop-shadow(1px 0 0 #fff) 
           drop-shadow(-1px 0 0 #fff) 
@@ -60,29 +58,23 @@ header {
           drop-shadow(0 -1px 0 #fff);
 }
 
-.logo_texto{
-    justify-content: center;
-    align-items: center;
-    line-height: 1.1pxs;
-    font-size: 1.4rem;
-    font-weight: bold;
-    word-break: break-all;
+.logo_texto img{
+    width: 150px;
+    height: auto;
 }
 
-.logo_texto span {
-    color: var(--detalhes);
-    font-size: 1.4rem;
-}
-
-.logo_texto span .fa-slash {
-    display: inline-block;
-    transform: scaleX(-1);
+.logo:hover {
+    filter: drop-shadow(1px 0 0 var(--detalhes_hover)) 
+          drop-shadow(-1px 0 0 var(--detalhes_hover)) 
+          drop-shadow(0 1px 0 var(--detalhes_hover)) 
+          drop-shadow(0 -1px 0 var(--detalhes_hover));
 }
 
 .lista {
     display: flex;
     align-items: center;
     list-style: none;
+    font-size: 18px;
     gap: 38px;
     transition: color 0.3s ease;
 }
@@ -93,6 +85,7 @@ header {
 
 .lista a:hover {
     color: var(--textos_hover);
+    font-weight: 700;
 }
 
 .botao {
@@ -100,6 +93,7 @@ header {
     padding: 15px 30px;
     background-color: var(--detalhes);
     border-radius: 20px;
+    font-size: 18px;
     transition: background-color 0.3s ease,
                 box-shadow 0.3s ease,
                 transform 0.2s ease;
