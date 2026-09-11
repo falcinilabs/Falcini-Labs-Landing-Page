@@ -1,9 +1,15 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const lista = document.querySelector('.menu_header');
+const button = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu_header');
 
-function alternarMenu() {
-    lista.classList.toggle('active');
-}
+button.addEventListener("click", function(){
+    menu.classList.toggle("aberto");
+    button.classList.toggle("ativo");
+    
+    const menuAberto = menu.classList.contains("aberto");
 
-
-menuToggle.addEventListener('click', alternarMenu);
+    if (menuAberto) {
+        button.setAttribute("aria-label","Fechar menu");
+    }else {
+        button.setAttribute("aria-label","Abrir menu");
+    }
+});

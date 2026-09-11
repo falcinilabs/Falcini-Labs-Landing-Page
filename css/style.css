@@ -79,6 +79,23 @@ header {
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.icone_menu {
+    display: block;
+}
+
+.icone_fechar {
+    display: none;
+}
+
+.menu-toggle.ativo .icone_menu {
+    display: none;
+}
+
+.menu-toggle.ativo .icone_fechar {
+    display: block;
 }
 
 .menu_header {
@@ -114,7 +131,7 @@ header {
 
 .botao {
     display: inline-flex;
-    padding: 15px 30px;
+    padding: 10px 30px;
     background-color: var(--detalhes);
     border-radius: 20px;
     font-size: 18px;
@@ -126,14 +143,15 @@ header {
 
 .botao:hover {
     background-color: var(--detalhes_hover);
-    box-shadow: 0 0 15px var(--detalhes_hover);
+    box-shadow: 0 0 10px var(--detalhes_hover);
     transform: translateY(-2px);
 }
+
 
 @media (max-width: 768px) {
 
     .menu-toggle {
-        display: block
+        display: block;
     }
 
     .menu_header {
@@ -152,7 +170,7 @@ header {
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); 
     }
 
-    .menu_header.active {
+    .menu_header.aberto {
         display: flex;
     }
     
@@ -176,3 +194,5 @@ header {
         text-align: center;
     }
 }
+
+
