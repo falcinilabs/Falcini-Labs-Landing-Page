@@ -137,10 +137,11 @@ header {
 
 .botao {
     display: inline-flex;
-    padding: 10px 30px;
+    padding: 0.7rem 2rem;
     background-color: var(--detalhes);
-    border-radius: 20px;
+    border-radius: 15px;
     font-size: 18px;
+    font-weight: 700;
     transition: background-color 0.3s ease,
                 box-shadow 0.3s ease,
                 transform 0.2s ease;
@@ -166,6 +167,69 @@ header {
 }
 
 
+
+/* --------------------------------------------- */
+
+footer {
+    padding: 0.2rem 1.5rem;
+    background-color: var(--fundo);
+    outline: 1px solid red;
+}
+
+.footer_content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_logo {
+    width: 50%;
+    display: flex;
+}
+
+.img_frame {
+    display: flex;
+}
+
+#footer_logo_img {
+    width: 45px;
+    filter: drop-shadow(1px 0 0 #fff) 
+          drop-shadow(-1px 0 0 #fff) 
+          drop-shadow(0 1px 0 #fff)
+}
+
+.word_frame {
+    display: flex;
+    align-items: end;
+}
+
+.word_frame img {
+    width: 110px;
+    filter: drop-shadow(1px 0 0 #fff) 
+          drop-shadow(-1px 0 0 #fff) 
+          drop-shadow(0 1px 0 #fff)
+}
+
+#menu_footer {
+    width: 50%;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: end;
+}
+
+#menu_footer ul {
+    gap: 10px;
+}
+
+#menu_footer a {
+    font-size: 14px;
+}
+
+#footer_direitos {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
 
 @media (max-width: 768px) {
 
