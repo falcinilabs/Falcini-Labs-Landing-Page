@@ -48,7 +48,7 @@ header {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-}
+} 
 
 .logo {
     display: flex;
@@ -154,6 +154,19 @@ header {
     transform: translateY(-2px);
 }
 
+.botao--secundario {
+    background-color: rgba(46, 46, 46, 0.5);
+    border: 1px solid var(--fundo);
+}
+
+.botao--secundario:hover {
+    color: var(--textos_hover);
+    background-color: var(--fundo_detalhes);
+    border: 1px solid var(--detalhes_hover);
+    box-shadow: 0 0 10px var(--detalhes_hover);
+}
+
+
 
 /* --------------------------------------------- */
 
@@ -216,17 +229,6 @@ footer {
     width: 100%;
     text-align: center;
     color: white;
-}
-.botao--secundario {
-    background-color: rgba(46, 46, 46, 0.5);
-    border: 1px solid var(--fundo);
-}
-
-.botao--secundario:hover {
-    color: var(--textos_hover);
-    background-color: var(--fundo_detalhes);
-    border: 1px solid var(--detalhes_hover);
-    box-shadow: 0 0 10px var(--detalhes_hover);
 }
 
 @media (max-width: 768px) {
