@@ -68,15 +68,3 @@
     height: 10px;
     border-radius: 50%;
 }
-
-.ponto .vermelho {
-    background: red;
-}
-
-.ponto .amarelo {
-    background-color: yellow;
-}
-
-.ponto .verde {
-    background-color: green;
-}
