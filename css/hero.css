@@ -45,7 +45,7 @@
     max-width: 420px;
     max-width: 580px;
     min-height: 480px;
-    background-color: var(--textos_hover);
+    background-color: lime;
     border: 1px solid #e5e7eb;
     border-radius: 16px;
     box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.5);
