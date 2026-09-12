@@ -5,12 +5,14 @@
         <meta name="description" content="Criação de landing Pages">
         <meta name="viewport" content="width=device-width", initial-scale="1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/hero.css">
         <script src="https://kit.fontawesome.com/943f809271.js" crossorigin="anonymous"></script>
         <title>Falcini Labs</title>
     </head>
 
     <body>
         <header>
+        <!-- Header 1.0 --> 
             <div class="menu_container" id="menu">
                 <div class="logo">
                     <a href="#" class="logo_imagem">
@@ -20,18 +22,68 @@
                         <img src="images/falcini_logo_nome.png" alt="Logo Falcini Labs">
                     </a>
                 </div>
+
                 <nav class="menu_header" id="menu" aria-label="Menu Principal">
                     <ul class="lista">
                         <li><a href="#servicos" aria-label="Serviços">Serviços</a></li>
                         <li><a href="#diferenciais" aria-label="Diferenciais">Diferenciais</a></li>
                         <li><a href="#contato" aria-label="Contato">Contato</a></li>
                     </ul>
-                </nav>                    
-                <a href="#contato" class="botao" aria-label="Pedir Orçamento">Orçamento</a>    
+
+                    <div class="botao--header">
+                        <a href="#contato" class="botao" id="botao--header" aria-label="Pedir Orçamento">Orçamento</a>    
+                    </div> 
+                </nav>     
+                
+                <button class="menu-toggle" aria-label="Abrir Menu" type="button">
+                    <span class="icone_menu">☰</span>
+                    <span class="icone_fechar">✕</span>
+                </button>
+
             </div>
         </header>
 
         <main>
+            <section class="hero" id="hero">
+                <div class="container">
+                    <div class="hero__cabecalho">
+                        <h1 class="hero__titulo">
+                            Transformamos visitantes em clientes com sites de 
+                            <span class="hero__degrade">alta performance</span> 
+                            e design impecável.
+                        </h1>
+                        <p class="hero__descricao">
+                            Estratégias, copy e design feitos por profissionais reais.
+                            sem templates genéricos, sem IA. Cada projeto é pensado em
+                            construir à mão para gerar resultados reais.
+                        </p>
+                        <div class="hero__contato">
+                            <a href="#contato" class="botao" aria-label="entrar em contato">
+                                Quero minha landing page 🡢
+                            </a>
+                            <a href="#site" class="botao botao--secundario" aria-label="portfólio">
+                                Nossos projetos
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero__bloco">
+                        <div class="navegador__barra">
+                            <div class="navegador__pontos">
+                                <span class="ponto vermelho"></span>
+                                <span class="ponto amarelo"></span>
+                                <span class="ponto verde"></span>
+                            </div>
+                            <div class="navegador__url">
+                                sualandingpage.com.br
+                            </div>    
+                            <div class="navegador__conteudo">
+
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </section>
+            
         </main>
 
         <footer>

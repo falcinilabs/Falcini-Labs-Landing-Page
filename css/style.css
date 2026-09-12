@@ -38,15 +38,23 @@ header {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .logo img {
@@ -70,13 +78,51 @@ header {
           drop-shadow(0 -1px 0 var(--detalhes_hover));
 }
 
-.lista {
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.icone_menu {
+    display: block;
+}
+
+.icone_fechar {
+    display: none;
+}
+
+.menu-toggle.ativo .icone_menu {
+    display: none;
+}
+
+.menu-toggle.ativo .icone_fechar {
+    display: block;
+}
+
+.menu_header {
     display: flex;
     align-items: center;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.lista {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
     list-style: none;
     font-size: 18px;
+    margin: 0;
+    padding: 0;
     gap: 38px;
     transition: color 0.3s ease;
+    z-index: 1;
 }
 
 .lista a {
@@ -88,20 +134,23 @@ header {
     font-weight: 700;
 }
 
+
 .botao {
     display: inline-flex;
-    padding: 15px 30px;
+    padding: 0.7rem 2rem;
     background-color: var(--detalhes);
-    border-radius: 20px;
+    border-radius: 15px;
     font-size: 18px;
+    font-weight: 700;
     transition: background-color 0.3s ease,
                 box-shadow 0.3s ease,
                 transform 0.2s ease;
+    z-index: 2;
 }
 
 .botao:hover {
     background-color: var(--detalhes_hover);
-    box-shadow: 0 0 15px var(--detalhes_hover);
+    box-shadow: 0 0 10px var(--detalhes_hover);
     transform: translateY(-2px);
 }
 
@@ -175,3 +224,63 @@ hr {
     text-align: center;
     color: white;
 }
+.botao--secundario {
+    background-color: rgba(46, 46, 46, 0.5);
+    border: 1px solid var(--fundo);
+}
+
+.botao--secundario:hover {
+    color: var(--textos_hover);
+    background-color: var(--fundo_detalhes);
+    border: 1px solid var(--detalhes_hover);
+    box-shadow: 0 0 10px var(--detalhes_hover);
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu_header {
+        display: none;
+        position: absolute;
+        background-color: var(--fundo);
+        top: 60px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 1rem 0;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); 
+    }
+
+    .menu_header.aberto {
+        display: flex;
+    }
+    
+    .lista {
+        position: static;
+        transform: none;
+        left: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .botao_header {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .botao_header .botao {
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+
