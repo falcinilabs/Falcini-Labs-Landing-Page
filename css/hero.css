@@ -1,6 +1,6 @@
 
 .hero {
-    height: 100dvh;
+    min-height: calc(100dvh - 70px);
     background: 
         /*radial-gradient(
             circle at 90% 10%,
