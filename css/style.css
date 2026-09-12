@@ -104,3 +104,74 @@ header {
     box-shadow: 0 0 15px var(--detalhes_hover);
     transform: translateY(-2px);
 }
+
+main {
+    height: 300px;
+}
+
+/* --------------------------------------------- */
+
+footer {
+    padding: 0.2rem 1.5rem;
+    background-color: var(--fundo);
+    outline: 1px solid red;
+}
+
+.footer_content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_logo {
+    width: 50%;
+    display: flex;
+}
+
+.img_frame {
+    display: flex;
+}
+
+#footer_logo_img {
+    width: 45px;
+    filter: drop-shadow(1px 0 0 #fff) 
+          drop-shadow(-1px 0 0 #fff) 
+          drop-shadow(0 1px 0 #fff)
+}
+
+.word_frame {
+    display: flex;
+    align-items: end;
+}
+
+.word_frame img {
+    width: 110px;
+    filter: drop-shadow(1px 0 0 #fff) 
+          drop-shadow(-1px 0 0 #fff) 
+          drop-shadow(0 1px 0 #fff)
+}
+
+#menu_footer {
+    width: 50%;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: end;
+}
+
+#menu_footer ul {
+    gap: 10px;
+}
+
+#menu_footer a {
+    font-size: 14px;
+}
+
+hr {
+    margin: 7/px 0px;
+}
+
+#footer_direitos {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
