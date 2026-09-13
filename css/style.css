@@ -125,11 +125,11 @@ header {
     z-index: 1;
 }
 
-.lista a {
+.lista_header a {
     color: var(--textos);
 }
 
-.lista a:hover {
+.lista_header a:hover {
     color: var(--textos_hover);
     font-weight: 700;
 }
@@ -137,7 +137,7 @@ header {
 
 .botao {
     display: inline-flex;
-    padding: 0.7rem 2rem;
+    padding: 0.5rem 2rem;
     background-color: var(--detalhes);
     border-radius: 15px;
     font-size: 18px;
@@ -156,7 +156,7 @@ header {
 
 .botao--secundario {
     background-color: rgba(46, 46, 46, 0.5);
-    border: 1px solid var(--fundo);
+    border: 1px solid rgba(46, 46, 46, 0.6);
 }
 
 .botao--secundario:hover {
