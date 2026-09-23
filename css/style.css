@@ -18,7 +18,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--fonte_principal);
-    outline: 1px dotted lime;
+    /*outline: 1px dotted lime;*/
 }
 
 a {
