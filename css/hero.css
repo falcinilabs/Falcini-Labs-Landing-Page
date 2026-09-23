@@ -57,6 +57,10 @@ svg {
     gap: 20px;
 }
 
+.fa-caret-right {
+    font-size: 20px;
+}
+
 .hero__bloco {
     display: block;
     width: 100%;
@@ -160,11 +164,12 @@ svg {
         height: 480px;
     }
 
-    .slider__item img {
-        height: auto;
-        object-position: top left;
+    .sliter__item img {
+        aspect-ratio: 5/3;
         object-fit: contain;
+        object-position: top center;
     }
+
 }
 
 @keyframes troca-img {
