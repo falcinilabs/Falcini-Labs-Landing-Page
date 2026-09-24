@@ -231,6 +231,7 @@ footer h3 {
     font-size: 18px;
     color: var(--textos_hover);
     text-shadow: 1px 1px var(--textos);
+    overflow-wrap: break-word;
 }
 
 #menu_footer {
