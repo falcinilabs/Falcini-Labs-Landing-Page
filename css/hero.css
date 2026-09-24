@@ -151,10 +151,17 @@ svg {
 
     .hero__estrutura{
         grid-template-columns: 1fr;
+        padding: 60px 16px;
+        gap: 40;
     }
 
     .hero__cabecalho {
         align-items: center;
+        text-align: center;
+    }
+
+    .hero__cabecalho h1 {
+        font-size: 28px;
     }
 
     .hero__contato {
@@ -165,13 +172,18 @@ svg {
     .hero__bloco {
         width: auto;
         max-width: 580px;
-        height: 400px;
+        height: auto;
+        aspect-ratio: 4/4;
+        border-radius: 12px;
     }
 
     .navegador__conteudo {
+        position: relative;
         width: 100%;
-        height: calc(400px - 43px);
-        object-fit: contain;
+        height: auto;
+        aspect-ratio: 4/4;
+        min-width: 0;
+        object-fit:cover;
     }
 
     .slider__item {
@@ -182,6 +194,8 @@ svg {
         width: 20%;
         height: 100%;
         object-fit: cover;
+        object-position: top center;
+        flex-shrink: 0;
     }
 
 }
