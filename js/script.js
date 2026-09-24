@@ -13,3 +13,14 @@ button.addEventListener("click", function(){
         button.setAttribute("aria-label","Abrir menu");
     }
 });
+
+const shareButton = document.querySelector("#share");
+
+    shareButton.addEventListener("click", async () => {
+        try{
+            await navigator.share({ title: "Falcini Labs", url:"http://falcinilabs.com.br/"});
+            console.log("Compartilhado com sucesso!");
+        } catch (err) {
+            console.error("Erro ao compartilhar", err.message);
+        }
+});
