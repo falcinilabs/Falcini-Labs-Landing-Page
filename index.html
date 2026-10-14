@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="Criação de landing Pages">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/falcini_logo_falcao.png" type="image/x-icon">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/hero.css">
         <script src="https://kit.fontawesome.com/943f809271.js" crossorigin="anonymous"></script>
@@ -24,7 +25,7 @@
                 </div>
 
                 <nav class="menu_header" id="menu" aria-label="Menu Principal">
-                    <ul class="lista">
+                    <ul class="lista_header">
                         <li><a href="#servicos" aria-label="Serviços">Serviços</a></li>
                         <li><a href="#diferenciais" aria-label="Diferenciais">Diferenciais</a></li>
                         <li><a href="#contato" aria-label="Contato">Contato</a></li>
@@ -58,26 +59,32 @@
                             construir à mão para gerar resultados reais.
                         </p>
                         <div class="hero__contato">
-                            <a href="https://api.whatsapp.com/message/NHV3TMRC7SGDD1?autoload=1&app_absent=0" class="botao" aria-label="entrar em contato">
+                            <a href="#contato" class="botao" aria-label="entrar em contato">
                                 Quero minha landing page 🡢
                             </a>
                             <a href="#site" class="botao botao--secundario" aria-label="portfólio">
                                 Nossos projetos
                             </a>
                         </div>
-                    </div>
-                    <div class="hero__bloco">
-                        <div class="navegador__barra">
-                            <div class="navegador__pontos">
-                                <span class="ponto vermelho"></span>
-                                <span class="ponto amarelo"></span>
-                                <span class="ponto verde"></span>
+                        <div class="hero__bloco" id="hero">
+                            <div class="navegador__barra">
+                                <div class="navegador__pontos">
+                                    <span class="ponto vermelho"></span>
+                                    <span class="ponto amarelo"></span>
+                                    <span class="ponto verde"></span>
+                                </div>
+                                <div class="navegador__url">
+                                    <div class="icon-lock-keyhole"></div> sualandingpage.com.br
+                                </div>    
                             </div>
-                            <div class="navegador__url">
-                                sualandingpage.com.br
-                            </div>    
                             <div class="navegador__conteudo">
-
+                                <div class="slider__item">
+                                    <img src="images/sample1.jpg" class="img1" alt="Exemplo landing page"> 
+                                    <img src="images/sample2.jpg" class="img2" alt="Exemplo landing page">
+                                    <img src="images/sample3.jpg" class="img3" alt="Exemplo landing page">
+                                    <img src="images/sample4.jpg" class="img4" alt="Exemplo landing page"> 
+                                    <img src="images/sample1.jpg" class="img5" alt="Exemplo landing page"> 
+                                </div>
                             </div>
                         </div>
                     </div>   
@@ -90,21 +97,43 @@
             <div class="container">
                 <div class="footer_content">
                     <div class="footer_logo">
-                        <div class="img_frame">
-                            <img id="footer_logo_img" src="images/falcini_logo_falcao.png" alt="">
+                        <div class="logo_footer">
+                            <img src="images/falcini_logo_falcao.png" class="logo_imagem alt="Mascote Falcini Labs">
+                            <img src="images/falcini_logo_nome.png" class="logo_texto" alt="Logo Falcini Labs">
                         </div>
-                        <div class="word_frame">
-                            <img src="images/falcini_logo_nome.png" alt="Logo Falcini Labs">
-                            <!-- <h4 id="footer_wordmark">FalciniLabs</h4> -->
+                        <div class="slogan">
+                            <span>Transformamos suas ideias em experiências digitais.</span>
                         </div>
                     </div>
-                    <nav class="menu_header" id="menu_footer" aria-label="Menu Principal">
-                        <ul class="lista">
+                    <nav class="menu_footer" id="menu_footer" aria-label="Menu Principal">
+                        <h3>Navegação</h3>
+                        <ul class="lista_footer">
                             <li><a href="#servicos" aria-label="Serviços">Serviços</a></li>
                             <li><a href="#diferenciais" aria-label="Diferenciais">Diferenciais</a></li>
                             <li><a href="#contato" aria-label="Contato">Contato</a></li>
                         </ul>
                     </nav>
+                    <div class="conectar">
+                        <h3>Conecte-se</h3>
+                        <div class="botoes">
+                            <span class="share" id="share">
+                                <a href="#compartilhar">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </a>
+                            </span>
+                            <span class="portfolio">
+                                <a href="#portfolio">
+                                    <i class="fa-solid fa-book-open"></i>
+                                </a>
+                            </span>
+                            <span class="instagram">
+                                <a href="https://www.instagram.com/falcinilabs/">
+                                   <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </span>
+                        </div>   
+                        <span><p>admin@falcinilabs.com.br</p></span>
+                    </div>
                 </div>
                 <hr>
                 <p id="footer_direitos">        
